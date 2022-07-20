@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1. Title and icon -->
+    <title>Property Rent</title>
+    <link rel = "icon" href = "asset/img/house.png" type = "image/x-icon">
+    <!-- 5. c. External css -->
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<!-- 5. b. Internal css -->
+<style>
+    .footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: aliceblue;
+        text-align: center;
+        padding: 10px 0 10px 0;
+    }
+</style>
+<body>
+    <!-- 5. a. Inline css -->
+    <nav style="display: flex; flex-direction: row; justify-content: space-between; padding: 0 20px 0 20px; background-color: aliceblue;">
+        <div style="display: flex; flex-direction: row;">
+            <img style="margin-top: auto; margin-bottom: auto; margin-right: 5px;" src="asset/img/house.png" height="30" alt="">
+            <a href="index.html"><h1>Property Rent</h1></a>
+        </div>
+        <div style="margin-top: auto; margin-bottom: auto;">
+            <a style="margin-left: 10px;" href="index.html">Home</a>
+            <a style="margin-left: 10px;" href="about.html">About us</a>
+            <a style="margin-left: 10px;" href="listproperty.html">Property List</a>
+            <a style="margin-left: 10px;" href="transaction.html">Transaction</a>
+            <a style="margin-left: 10px;" href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="section" style="margin-top: 50px; margin-bottom: 100px;">
+        <h1 style="font-size: xx-large;">Property Detail</h1>
+        <div style="display: flex; flex-direction: row;">
+            <div>
+                <!-- 4. a. References Figure -->
+                <figure>
+                    <img src="asset/img/big-house.jpg" alt="Trulli" style="width:500px">
+                    <figcaption>Fig.1 - Big House Property Rent</figcaption>
+                </figure>
+
+                <h1 style="margin-left: 40px; margin-top: 50px;">House tour video</h1>
+                <!-- 4. d. Video -->
+                <video width="500" style="margin-left: 40px;" controls>
+                    <source src="asset/video/videoplayback.mp4" type="video/mp4">
+                    Your browser does not support HTML video.
+                </video>
+
+                <!-- 4. c. Audio -->
+                <h1 style="margin-left: 40px; margin-top: 50px;">House Description from sales</h1>
+                <audio style="margin-left: 40px;" controls>
+                    <source src="asset/audio/promotional-sound.mp3" type="audio/mp3">
+                  Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div>
+                <h1>Big House</h1>
+                <h3>Overview</h3>
+                <p>Come and see your future 3-bedroom, 2-bathroom corner lot home in the sought-after community of Bentley Oaks. 
+                    As you enter, you will immediately fall in love with the wood-look flooring that guides you across a thoughtful 
+                    layout. The living room boasts an abundance of natural light, which creates a warm and inviting atmosphere, 
+                    and vaulted ceilings that continue into the kitchen. Prepare a lovely home-cooked meal in the stylish kitchen, 
+                    equipped with stainless steel appliances, pantry, beautifully tiled backsplash, and a breakfast bar. 
+                    The primary bedroom is truly a little slice of paradise, featuring a walk-in closet and spa-like en suite bathroom. 
+                    Relax and enjoy the Auburndale weather from the spacious fenced-in backyard with a pool! This home is minutes from 
+                    I-95, restaurants, shopping centers, and Lake Ariana!</p>
+
+                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                    <div>
+                        <h3>Interior Detail</h3>
+                        <p>Bedroom: 3</p>
+                        <p>Bathroom: 2</p>
+                        <p>Parking Space: 2</p>
+        
+                        <h3>Location</h3>
+                        <p>Region: Kemanggisan</p>
+                        <p>City: Jakarta</p>
+                        <p>Country: Indonesia</p>
+                    </div>
+
+                    <div style="width: 80%;">
+                        <h3>Purchase Agreement Document</h3>
+                        <!-- 4. b. Iframe pdf -->
+                        <iframe src="asset/pdf/purchase_agreement.pdf" width="100%" height="500px"></iframe>
+                    </div>
+                </div>
+
+                <h3>Price: 1,5 M</h3>
+                <button id="book">Book House</button>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer">
+            Copyright &copy; Property Rent 2022
+        </div>
+    </footer>
+    
+</body>
+</html>

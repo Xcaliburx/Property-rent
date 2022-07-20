@@ -1,0 +1,56 @@
+/* 5. c. External css */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* index */
+/* 6. a. class selector */
+.section{
+    padding: 0 20px 0 20px;
+}
+
+.property-field{
+    width: fit-content;
+}
+
+.property-img{
+    width: 300px;
+    height: 300px;
+}
+
+.property-list{
+    text-align: center;
+}
+
+.property-grid{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* contact */
+.form{
+    margin-top: 20px;
+}
+
+/* 6. b. identity selector */
+#button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px; 
+    padding: 10px 30px;
+}
+
+/* Property Detail */
+#book{
+    display: block;
+    margin-top: 50px; 
+    padding: 10px 30px;
+}

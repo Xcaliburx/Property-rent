@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1. Title and icon -->
+    <title>Property Rent</title>
+    <link rel = "icon" href = "asset/img/house.png" type = "image/x-icon">
+    <!-- 5. c. External css -->
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<!-- 5. b. Internal css -->
+<style>
+    .footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: aliceblue;
+        text-align: center;
+        padding: 10px 0 10px 0;
+    }
+</style>
+<body>
+    <!-- 5. a. Inline css -->
+    <nav style="display: flex; flex-direction: row; justify-content: space-between; padding: 0 20px 0 20px; background-color: aliceblue;">
+        <div style="display: flex; flex-direction: row;">
+            <img style="margin-top: auto; margin-bottom: auto; margin-right: 5px;" src="asset/img/house.png" height="30" alt="">
+            <a href="index.html"><h1>Property Rent</h1></a>
+        </div>
+        <div style="margin-top: auto; margin-bottom: auto;">
+            <a style="margin-left: 10px;" href="index.html">Home</a>
+            <a style="margin-left: 10px;" href="about.html">About us</a>
+            <a style="margin-left: 10px;" href="listproperty.html">Property List</a>
+            <a style="margin-left: 10px;" href="transaction.html">Transaction</a>
+            <a style="margin-left: 10px;" href="contact.html">Contact</a>
+        </div>
+    </nav>
+    
+    <section class="section" style="display: flex; flex-direction: row;">
+        <img src="asset/img/contact-us.jpg" style="width: 600px; height: 500px; margin-top: 10%;" alt="">
+
+        <div style="padding-left: 300px; padding-right: 40px; margin-top: 5%;">
+            <h1 style="font-size: xx-large;">Contact Us</h1>
+            <!-- 3. a. Form -->
+            <form action="" style="width: 200%;">
+                <div class="form">
+                    <label for="name">Name</label>
+                    <input type="text" style="width: 100%; margin-top: 5px;" name="name">
+                </div>
+
+                <!-- 3. b. Pilihan hanya 1 pada form -->
+                <div class="form">
+                    <label for="">Gender</label>
+                    <div style="display: flex; flex-direction: row; margin-top: 5px;">
+                        <input type="radio" name="radio">
+                        <label for="male">Male</label>
+                        <input style="margin-left: 10px;" type="radio" name="radio">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+
+                <!-- 3. c. Pilihan lebih dari 1 pada form -->
+                <div class="form">
+                    <label for="">Question Type</label>
+                    <div style="display: flex; flex-direction: row; margin-top: 5px;">
+                        <input type="checkbox" name="check1">
+                        <label for="">Website Usage</label>
+                        <input style="margin-left: 10px;" type="checkbox" name="check1">
+                        <label for="">Rent Building</label>
+                    </div>
+                    <div style="display: flex; flex-direction: row; margin-top: 5px;">
+                        <input type="checkbox" name="check2">
+                        <label for="">Buy Building</label>
+                        <input style="margin-left: 18px;" type="checkbox" name="check1">
+                        <label for="">General Question</label>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <label for="question">Question</label>
+                    <textarea style="width: 100%; resize: none; margin-top: 5px;" rows="10" name="question"></textarea>
+                </div>
+
+                <!-- 3. d. Upload file -->
+                <div class="form" style="display: flex; flex-direction: column;">
+                    <label for="image">Image Explanation(if exist)</label>
+                    <input type="file" name="file">
+                </div>
+
+                <button id="button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            Copyright &copy; Property Rent 2022
+        </div>
+    </footer>
+</body>
+</html>

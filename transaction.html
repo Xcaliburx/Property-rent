@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1. Title and icon -->
+    <title>Property Rent</title>
+    <link rel = "icon" href = "asset/img/house.png" type = "image/x-icon">
+    <!-- 5. c. External css -->
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<!-- 5. b. Internal css -->
+<style>
+    .footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: aliceblue;
+        text-align: center;
+        padding: 10px 0 10px 0;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+    }
+</style>
+<body>
+    <!-- 5. a. Inline css -->
+    <nav style="display: flex; flex-direction: row; justify-content: space-between; padding: 0 20px 0 20px; background-color: aliceblue;">
+        <div style="display: flex; flex-direction: row;">
+            <img style="margin-top: auto; margin-bottom: auto; margin-right: 5px;" src="asset/img/house.png" height="30" alt="">
+            <a href="index.html"><h1>Property Rent</h1></a>
+        </div>
+        <div style="margin-top: auto; margin-bottom: auto;">
+            <a style="margin-left: 10px;" href="index.html">Home</a>
+            <a style="margin-left: 10px;" href="about.html">About us</a>
+            <a style="margin-left: 10px;" href="listproperty.html">Property List</a>
+            <a style="margin-left: 10px;" href="transaction.html">Transaction</a>
+            <a style="margin-left: 10px;" href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="section" style="margin-top: 50px; margin-bottom: 100px;">
+        <h1 style="font-size: xx-large;">Transaction List</h1>
+        <!-- 2. b. Table -->
+        <table style="width:90%; margin: auto;">
+            <tr>
+                <!-- 2. c. Table colspan -->
+                <!-- 2. d. Control column -->
+                <th style="height: 100px;" scope="col" colspan="2">Property Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Booking Date</th>
+                <th scope="col">Meeting with client Date</th>
+            </tr>
+            <tr>
+                <!-- 2. c. Table rowspan -->
+                <td rowspan="2">House</td>
+                <td style="height: 50px;">Big House</td>
+                <td>2,3 M</td>
+                <td>12/04/2021</td>
+                <td>22/04/2021 15.00</td>
+            </tr>
+            <tr>
+                <td style="height: 50px;">Medium House House</td>
+                <td>1 M</td>
+                <td>5/10/2021</td>
+                <td>15/10/2021 12.00</td>
+              </tr>
+            <tr>
+                <td style="height: 50px;">Appartment</td>
+                <td>Big Appartment</td>
+                <td>1,7 M</td>
+                <td>17/02/2022</td>
+                <td>25/02/2022 13.30</td>
+            </tr>
+          </table>
+    </section>
+    
+    <footer>
+        <div class="footer">
+            Copyright &copy; Property Rent 2022
+        </div>
+    </footer>
+</body>
+</html>
